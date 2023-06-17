@@ -12,6 +12,7 @@ var morgan = require('morgan');
 var formcontactoRoutes = require('./routes/formcontacto'); ////IMPORTAR RUTAS
 var indexRouter = require('./routes/index'); ////IMPORTAR RUTAS
 var somosRouter = require('./routes/somos'); ////IMPORTAR RUTAS
+var galeriaRouter = require('./routes/galeria'); ////IMPORTAR RUTAS
 
 
 //CONFIGURACIONES DEL SERVIDOR(BASICAS)
@@ -44,6 +45,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/contacto', formcontactoRoutes); /// COMUNICAR RUTAS CON EL SERVER
 app.use('/api/inicio', indexRouter); /// COMUNICAR RUTAS CON EL SERVER
 app.use('/api/somos', somosRouter); /// COMUNICAR RUTAS CON EL SERVER
+app.use('/api/galeria', galeriaRouter); /// COMUNICAR RUTAS CON EL SERVER
 
 
 
