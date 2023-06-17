@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "serve": "nodemon index.js"
-    },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.0",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-myconnection": "^1.0.4",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "underscore": "^1.13.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

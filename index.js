@@ -4,7 +4,11 @@ var app = express();
 var morgan = require('morgan');
 var mysql = require('mysql');
 
-var conexion = require('express-myconnection')
+
+//Conexion con database
+
+const {conexion} = require('./fuente/sqlconexion.js')
+
 
 
 //CONFIGURACIONES DEL SERVIDOR(BASICAS)
@@ -21,16 +25,6 @@ app.set('view engine', 'ejs');
 ///MIDDLEWARE PARA EJECUTARSE ANTES DE LAS PETICIONES ANTES DE LOS USUARIOS
 
 app.use(morgan('dev')); //Muestra mensajes por consola sencillos
-
-app.use(conexion(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: '123456',
-    port: 3306,
-    database: 'repaircats'
-
-}, 'single')); ///Establecer conexión con MYSQL
-
 
 
 ////IMPORTAR RUTAS
