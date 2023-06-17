@@ -2,3 +2,5 @@ css/
 views/
 img/
 .env
+assets/
+public/

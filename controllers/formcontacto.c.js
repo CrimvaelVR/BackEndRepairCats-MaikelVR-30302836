@@ -4,14 +4,15 @@ const { reject } = require('underscore');
 var formFuente = require('../fuente/sqlformcon.js')
 
 class formController {
-    crear(datos){
+    registrar(datos){
+        console.log(datos)
         return new Promise ((resolve, reject)=>{
-            if (!datos.Nombre-Persona || !datos.Correo || !datos.Teléfono || !datos.Mensaje ) {
+            if (!datos.Nombre_Persona || !datos.Correo || !datos.Telefono || !datos.Mensaje ) {
                 console.log('Compruebe uno de los datos a Ingresar')
                 return resolve("Compruebe uno de los datos a ingresar.");
             }
             console.log("Controlador pa enviar los datos al BD")
-            formFuente.crear(datos)
+            formFuente.RegistrarForm(datos)
             .then((resultado)=>{
                 resolve (resultado)
             })
