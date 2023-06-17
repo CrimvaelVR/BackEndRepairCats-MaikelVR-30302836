@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 const controller = require('../controllers/formcontacto.c.js')
 
-
+/// RENDERIZAR LA PAGINA
 
 router.get('/', function(req, res, next) {
     res.render('contacto', {Agregado: "Ingresar datos"})
-    });
+});
 
 //REGISTRAR DATOS DEL FORMULARIO
 

@@ -10,6 +10,8 @@ var app = express();
 var morgan = require('morgan');
 
 var formcontactoRoutes = require('./routes/formcontacto'); ////IMPORTAR RUTAS
+var indexRouter = require('./routes/index'); ////IMPORTAR RUTAS
+var somosRouter = require('./routes/somos'); ////IMPORTAR RUTAS
 
 
 //CONFIGURACIONES DEL SERVIDOR(BASICAS)
@@ -32,7 +34,7 @@ app.use(express.json()); ///ENTENDER JSON
 app.use(express.urlencoded({ extended: false })); //↓ ENTIENDE LOS DATOS QUE LLEGAN DESDE EL FORMULARIO (ESTOS DATOS SON SENCILLOS, COMO TEXTOS O DATOS QUE VIENEN DESDE INPUTS) ↓
 
 
-//ARCHIVOS ESTATICOS, tal vez los use bien a futuro
+//ARCHIVOS ESTATICOS, Para resumir, esto es para el css, para que los detecte apropiadamente
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -40,6 +42,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/api/contacto', formcontactoRoutes); /// COMUNICAR RUTAS CON EL SERVER
+app.use('/api/inicio', indexRouter); /// COMUNICAR RUTAS CON EL SERVER
+app.use('/api/somos', somosRouter); /// COMUNICAR RUTAS CON EL SERVER
 
 
 
