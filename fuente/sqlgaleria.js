@@ -12,7 +12,7 @@ class galeriaFuente {
   listarP() {
     return new Promise((resolve, reject) => {
       console.log('Funciona el SQL De Listar los productos');
-      conection.query('SELECT * from `productos`', function (error, results, fields) {
+      conection.query('SELECT * from productos WHERE id_categoria = 4', function (error, results, fields) {
         if (error) reject(error);
         console.log(results);
         resolve(results);
