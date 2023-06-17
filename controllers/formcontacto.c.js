@@ -5,7 +5,6 @@ var formFuente = require('../fuente/sqlformcon.js')
 
 class formController {
     registrar(datos){
-        console.log(datos)
         return new Promise ((resolve, reject)=>{
             if (!datos.Nombre_Persona || !datos.Correo || !datos.Telefono || !datos.Mensaje ) {
                 console.log('Compruebe uno de los datos a Ingresar')

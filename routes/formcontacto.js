@@ -17,6 +17,9 @@ router.post('/', function(req, res){
     .then((resultado)=>{
         res.render('contacto',{Agregado: "Respuesta registrada en la pagina"})
     })
+    .catch((err)=>{
+        res.send(err)
+    })
 })
 
 

@@ -9,6 +9,7 @@ const conection = mysql.createConnection({
 })
 
 class indexFuente {
+
 }
 
 

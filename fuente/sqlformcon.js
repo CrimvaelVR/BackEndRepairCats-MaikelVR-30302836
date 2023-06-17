@@ -31,6 +31,15 @@ class formFuente {
         })
     }
 
+     obtenerProductosRecientes() {
+        return new Promise((resolve, reject) => {
+            conection.query('SELECT * FROM productos ORDER BY fecha DESC LIMIT 3', (error, results, fields) => {
+                if (error) reject(error);
+                resolve(results);
+            });
+        });
+    }
+
 
 }
 
