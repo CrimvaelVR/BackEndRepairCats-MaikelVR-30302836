@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-06-2023 a las 20:51:14
+-- Tiempo de generación: 17-06-2023 a las 22:11:53
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.1.12
 
@@ -83,7 +83,7 @@ CREATE TABLE `productos` (
 INSERT INTO `productos` (`id`, `nombreprod`, `descripción`, `costo`, `id_categoria`, `imagen`, `fecha`) VALUES
 (1, 'Nvidia GeForce RTX 4080', 'La Nvidia GeForce RTX 4080 es la GPU más potente dentro de la serie RTX de Nvidia. Con una arquitectura Ampere mejorada y 12.288 núcleos de procesamiento, esta GPU ofrece un rendimiento excepcional en juegos y aplicaciones de alta demanda gráfica. Además, cuenta con 24 GB de VRAM GDDR6X para manejar grandes cargas de trabajo en aplicaciones de renderizado, edición de video y diseño 3D.', '1499.99', 4, '/assets/img/rtx4080.webp\r\n', '2022-11-17'),
 (2, 'Mouse Logitech MX Master 3', 'Mouse inalámbrico con diseño ergonómico, sensor láser de alta precisión y botones personalizables', '99.99', 6, '/assets/img/mousegaming.webp', '2023-06-17'),
-(3, 'Teclado mecánico Corsair K70 RGB', 'El teclado mecánico Corsair K70 RGB cuenta con interruptores Cherry MX RGB Brown, que ofrecen una experiencia de escritura táctil y silenciosa. Además, tiene retroiluminación RGB personalizable y teclas programables para una mayor comodidad y productividad.', '149.99', 5, 'https://ejemplo.com/rx8900xt.jpg', '2022-05-17'),
+(3, 'Teclado mecánico Corsair K70 RGB', 'El teclado mecánico Corsair K70 RGB cuenta con interruptores Cherry MX RGB Brown, que ofrecen una experiencia de escritura táctil y silenciosa. Además, tiene retroiluminación RGB personalizable y teclas programables para una mayor comodidad y productividad.', '149.99', 5, '/assets/img/applekm.webp', '2022-05-17'),
 (4, 'AMD Radeon RX 7900 XT', 'La AMD Radeon RX 7900 XT es la GPU más potente dentro de la serie RX de AMD. Con una arquitectura RDNA3 mejorada y 10.240 núcleos de procesamiento, esta GPU ofrece un rendimiento excepcional en juegos y aplicaciones de alta demanda gráfica. Además, cuenta con 16 GB de VRAM GDDR6 para manejar cargas de trabajo en aplicaciones de renderizado, edición de video y diseño 3D.', '1399.99', 4, '/assets/img/radeon7900.png', '2023-06-17'),
 (5, 'Teclado gamer Redragon K552', 'El teclado gamer Redragon K552 cuenta con interruptores mecánicos Outemu Blue para una experiencia de escritura táctil y audible. Además, tiene retroiluminación roja ajustable y teclas programables para una mayor comodidad y productividad. Es ideal para jugadores y profesionales que requieren un teclado de alta calidad y durabilidad.', '49.99', 5, 'https://ejemplo.com/tecladoredragon.jpg', '2022-05-17'),
 (6, 'Nvidia Titan R', 'La Nvidia Titan R es la GPU más potente dentro de la serie Titan de Nvidia. Con una arquitectura Ampere mejorada y 4608 núcleos de procesamiento, esta GPU ofrece el máximo rendimiento en aplicaciones de renderizado, edición de video y diseño 3D. Además, cuenta con 48 GB de VRAM GDDR6X para manejar grandes cargas de trabajo incluso en aplicaciones de mayor demanda.', '4999.99', 4, '/assets/img/nvidiatitan.png', '2023-06-17'),
