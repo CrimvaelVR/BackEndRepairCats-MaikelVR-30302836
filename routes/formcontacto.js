@@ -15,7 +15,7 @@ router.post('/', function(req, res){
     console.log(datos)
     controller.registrar(datos)
     .then((resultado)=>{
-        res.render('contacto',{Agregado: "Respuesta registrada en la pagina"})
+        res.redirect(301, 'http://localhost:3000/api/inicio');
     })
     .catch((err)=>{
         res.send(err)

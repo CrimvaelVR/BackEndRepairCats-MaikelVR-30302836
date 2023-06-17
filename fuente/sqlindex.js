@@ -9,9 +9,17 @@ const conection = mysql.createConnection({
 })
 
 class indexFuente {
-
-}
-
+    listarP() {
+      return new Promise((resolve, reject) => {
+        console.log('Funciona el SQL De Listar los productos');
+        conection.query('SELECT * from productos', function (error, results, fields) {
+          if (error) reject(error);
+          console.log(results);
+          resolve(results);
+        });
+      });
+    }
+  }
 
 
 const indexF = new indexFuente ()
